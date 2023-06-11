@@ -1,0 +1,28 @@
+<div class="mx-auto navbar">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        About us
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About us</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Visit our farm</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Courses
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=animals,gardening,horses,tomatoes">All courses</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=animals">Animals</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=gardening">Gardening</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=horses">Horses</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=tomatoes">Tomatoes</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=chickens">Chickens</a></li>
+            <li><a href="{% url 'courses' %}?sort=price&direction=asc" class="dropdown-item">Sort By Price</a></li>
+            <li><a href="{% url 'courses' %}?sort=rating&direction=desc" class="dropdown-item ">Sort By Rating</a></li>
+            <li><a href="{% url 'courses' %}?sort=category&direction=asc" class="dropdown-item ">Sort By Category</a></li>
+        </ul>
+    </div>
+</div>
